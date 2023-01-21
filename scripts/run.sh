@@ -1,10 +1,27 @@
 #!/bin/sh
 
 xrdb merge ~/.Xresources 
-xbacklight -set 10 &
-feh --bg-fill ~/Pictures/wall/gruv.png &
-xset r rate 200 50 &
+xbacklight -set 65 &
+nitrogen --restore &
+xset r rate 350 35 &
+setxkbmap -layout us,gr -option grp:alt_shift_toggle &
+xkbset exp "=bouncekeys" &
+xkbset bo 50 &
 picom &
+dunst &
+nm-applet &
+redshift-gtk -l 40.6403167:22.9352716 -t 6500:3500 &
+lxpolkit &
+wmname "LG3D" &
+flameshot &
+mattermost-desktop &
+#qbittorrent --no-splash &
+keepassxc &
+#conky &
+thunderbird &
+pw-cli destroy 28 &
+(sleep 3 && volumeicon -d default) &
+#eww open eww &
 
-~/.config/chadwm/scripts/bar.sh &
+~/.config/ddwm/scripts/bar.sh &
 while type dwm >/dev/null; do dwm && continue || break; done

@@ -103,6 +103,10 @@ enum {
   SchemeTag3,
   SchemeTag4,
   SchemeTag5,
+  SchemeTag6,
+  SchemeTag7,
+  SchemeTag8,
+  //SchemeTag9,
   SchemeLayout,
   TabSel,
   TabNorm,
@@ -445,6 +449,7 @@ struct Monitor {
 
 #include "vanitygaps.c"
 #include "movestack.c"
+#include "shiftview.c"
 
 struct Pertag {
 	unsigned int curtag, prevtag; /* current and previous tag */
