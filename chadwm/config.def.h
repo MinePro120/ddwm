@@ -37,7 +37,7 @@ static const int new_window_attach_on_end = 1;  /* 1 means the new window will a
 #define ICONSIZE 24   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Noto Sans:style:medium:size=11", "SauceCodePro Nerd Font Mono:style:medium:size=18"};
+static const char *fonts[]          = {"Noto Sans:style:medium:size=10", "SauceCodePro Nerd Font Mono:style:medium:size=18"};
 
 // theme
 #include "themes/nord.h"

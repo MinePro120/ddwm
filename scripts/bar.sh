@@ -41,7 +41,7 @@ mem() {
 }
 
 disk() {
-  printf "^c$red^^b$black^ 󰋊$(df -h / --output=used | tail -n 1 | cut -d ' ' -f 3) "
+  printf "^c$red^^b$black^ 󰋊 $(df -h / --output=used | tail -n 1 | cut -d ' ' -f 3) "
 }
 
 wlan() {
