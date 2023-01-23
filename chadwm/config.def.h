@@ -154,7 +154,7 @@ static const Key keys[] = {
     { MODKEY,                           XK_u,       spawn,          SHCMD("maim --select | xclip -selection clipboard -t image/png")},
 
     { MODKEY,                           XK_d,       spawn,          SHCMD("rofi -show drun") },
-    { MODKEY,                           XK_Return,  spawn,          SHCMD("alacritty")},
+    { MODKEY,                           XK_Return,  spawn,          SHCMD("kitty")},
     { MODKEY,                           XK_w,       spawn,          SHCMD("firefox")},
     { MODKEY,                           XK_f,       spawn,          SHCMD("pcmanfm")},
     { MODKEY,                           XK_s,       spawn,          SHCMD("flameshot full")},
@@ -269,7 +269,7 @@ static const Button buttons[] = {
     { ClkLtSymbol,          0,                     Button1,        setlayout,      {0} },
     { ClkLtSymbol,          0,                     Button3,        setlayout,      {.v = &layouts[2]} },
     { ClkWinTitle,          0,                     Button2,        zoom,           {0} },
-    { ClkStatusText,        0,                     Button2,        spawn,          SHCMD("alacritty") },
+    { ClkStatusText,        0,                     Button2,        spawn,          SHCMD("kitty") },
 
     /* Keep movemouse? */
     //{ ClkClientWin,         MODKEY,                Button1,        movemouse,      {0} },
