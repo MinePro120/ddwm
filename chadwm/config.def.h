@@ -28,17 +28,16 @@ static const int horizpadtabo       = 15;
 static const int scalepreview       = 4;
 static const int tag_preview        = 1;        /* 1 means enable, 0 is off */
 static const int colorfultag        = 1;        /* 0 means use SchemeSel for selected non vacant tag */
-static const char *upvol[]          = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",     NULL };
-static const char *downvol[]        = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",     NULL };
-static const char *mutevol[]        = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle",  NULL };
-static const char *light_up[]       = { "/usr/bin/light", "-A",              "5",            NULL };
-static const char *light_down[]     = { "/usr/bin/light", "-U",              "5",            NULL };
+static const char *upvol[]          = { "/usr/bin/pactl", "set-sink-volume", "0", "+5%",    NULL };
+static const char *downvol[]        = { "/usr/bin/pactl", "set-sink-volume", "0", "-5%",    NULL };
+static const char *mutevol[]        = { "/usr/bin/pactl", "set-sink-mute",   "0", "toggle", NULL };
+static const char *light_up[]       = { "/usr/bin/light", "-A",              "5",           NULL };
+static const char *light_down[]     = { "/usr/bin/light", "-U",              "5",           NULL };
 static const int new_window_attach_on_end = 1;  /* 1 means the new window will attach on the end, 0 means front, default is front */
-#define ICONSIZE 19   /* icon size */
+#define ICONSIZE 24   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Noto Sans:style:medium:size=10", "SauceCodePro Nerd Font Mono:style:medium:size=16",
-                                       "Material Design Icons Desktop:size=10"};
+static const char *fonts[]          = {"Noto Sans:style:medium:size=11", "SauceCodePro Nerd Font Mono:style:medium:size=18"};
 
 // theme
 #include "themes/nord.h"

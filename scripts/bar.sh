@@ -11,7 +11,7 @@ interval=0
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$black^^b$green^ CPU "
+  printf "^c$black^^b$green^ 󰻠 "
   printf "^c$white^^b$grey^ $cpu_val "
 }
 
@@ -21,27 +21,27 @@ pkg_updates() {
   #updates=$(aptitude search '~U' | wc -l) # apt (ubuntu,debian etc)
 
   #if [ -z "$updates" ]; then
-  #  printf "^c$green^      Fully Updated"
+  #  printf "^c$green^     󰚰 Fully Updated"
   #else
-    printf "^c$green^      $updates "
+    printf "^c$green^     󰚰 $updates "
   #fi
 }
 
 battery() {
   get_capacity="$(cat /sys/class/power_supply/BAT0/capacity)"
-  printf "^c$blue^ $get_capacity "
+  printf "^c$blue^󰁹 $get_capacity "
 }
 
 brightness() {
-  printf "^c$red^ %.0f " $(cat /sys/class/backlight/*/brightness)
+  printf "^c$red^󰃟 %.0f " $(cat /sys/class/backlight/*/brightness)
 }
 
 mem() {
-  printf "^c$blue^^b$black^  $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g) "
+  printf "^c$blue^^b$black^ 󰍛 $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g) "
 }
 
 disk() {
-  printf "^c$red^^b$black^ $(df -h / --output=used | tail -n 1) "
+  printf "^c$red^^b$black^ 󰋊$(df -h / --output=used | tail -n 1 | cut -d ' ' -f 3) "
 }
 
 wlan() {
@@ -52,7 +52,7 @@ wlan() {
 }
 
 clock() {
-	printf "^c$black^^b$darkblue^ 󱑆 "
+	printf "^c$black^^b$darkblue^ 󰥔 "
 	printf "^c$black^^b$blue^ $(date '+%a %d %b %H:%M:%S') "
 }
 
