@@ -155,7 +155,7 @@ static const Key keys[] = {
     { MODKEY,                           XK_d,       spawn,          SHCMD("rofi -show drun") },
     { MODKEY,                           XK_Return,  spawn,          SHCMD("kitty")},
     { MODKEY,                           XK_w,       spawn,          SHCMD("firefox")},
-    { MODKEY,                           XK_f,       spawn,          SHCMD("pcmanfm")},
+    { MODKEY,                           XK_f,       spawn,          SHCMD("nemo")},
     { MODKEY,                           XK_s,       spawn,          SHCMD("flameshot full")},
     { MODKEY|ShiftMask,                 XK_s,       spawn,          SHCMD("flameshot launcher")},
 
