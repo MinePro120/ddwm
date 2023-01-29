@@ -3,7 +3,7 @@ configuration{
     lines: 5;
     font: "Noto Sans 12";
     show-icons: true;
-    icon-theme: "Papirus-Dark";
+    icon-theme: "Nordzy-dark";
     terminal: "alacritty";
     drun-display-format: "{icon} {name}";
     location: 0;
