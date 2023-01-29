@@ -12,7 +12,6 @@ dunst &
 nm-applet &
 redshift-gtk -l 40.6403167:22.9352716 -t 6500:3500 &
 lxpolkit &
-flameshot &
 mattermost-desktop &
 #qbittorrent --no-splash &
 keepassxc &

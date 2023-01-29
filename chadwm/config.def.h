@@ -148,9 +148,8 @@ static const Key keys[] = {
     { 0,            XF86XK_MonBrightnessUp,         spawn,          {.v = light_up}},
     { 0,            XF86XK_MonBrightnessDown,       spawn,          {.v = light_down}},
 
-    // screenshot fullscreen and cropped
-    { MODKEY|ControlMask,               XK_u,       spawn,          SHCMD("maim | xclip -selection clipboard -t image/png")},
-    { MODKEY,                           XK_u,       spawn,          SHCMD("maim --select | xclip -selection clipboard -t image/png")},
+    // screenshot
+    { 0,                                XK_Print,   spawn,          SHCMD("flameshot gui")},
 
     { MODKEY,                           XK_d,       spawn,          SHCMD("rofi -show drun") },
     { MODKEY,                           XK_Return,  spawn,          SHCMD("kitty")},
