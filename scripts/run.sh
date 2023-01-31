@@ -17,7 +17,6 @@ mattermost-desktop &
 keepassxc &
 #conky &
 thunderbird &
-pw-cli destroy 28 &
 (sleep 3 && volumeicon -d default) &
 #eww open eww &
 
