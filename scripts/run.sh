@@ -17,6 +17,7 @@ mattermost-desktop &
 keepassxc &
 #conky &
 thunderbird &
+clipit &
 (sleep 3 && volumeicon -d default) &
 #eww open eww &
 
