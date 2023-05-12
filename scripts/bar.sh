@@ -18,7 +18,7 @@ cpu() {
 pkg_updates() {
   #updates=$({ timeout 20 doas xbps-install -un 2>/dev/null || true; } | wc -l) # void
   updates=$({ timeout 20 checkupdates 2>/dev/null || true; } | wc -l) # arch
-  # updates=$({ timeout 20 aptitude search '~U' 2>/dev/null || true; } | wc -l)  # apt (ubuntu, debian etc)
+  #updates=$({ timeout 20 aptitude search '~U' 2>/dev/null || true; } | wc -l) # apt (ubuntu, debian etc)
 
   #if [ -z "$updates" ]; then
   #  printf "^c$green^     󰚰 Fully Updated"
@@ -29,7 +29,7 @@ pkg_updates() {
 
 battery() {
   get_capacity="$(cat /sys/class/power_supply/BAT0/capacity)"
-  printf "^c$blue^󰁹 $get_capacity "
+  printf "^c$blue^󰂅 $get_capacity "
 }
 
 brightness() {
@@ -41,7 +41,7 @@ mem() {
 }
 
 disk() {
-  printf "^c$red^^b$black^ 󰋊 $(df -h / --output=used | tail -n 1 | cut -d ' ' -f 3) "
+  printf "^c$red^^b$black^ 󰆼 $(df -h / --output=used | tail -n 1 | cut -d ' ' -f 3) "
 }
 
 wlan() {
