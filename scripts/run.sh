@@ -1,7 +1,7 @@
 #!/bin/sh
 
 xrdb merge ~/.Xresources 
-xbacklight -set 65 &
+#xbacklight -set 65 &
 nitrogen --restore &
 xset r rate 350 35 &
 setxkbmap -layout us,gr -option grp:alt_shift_toggle &
