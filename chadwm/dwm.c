@@ -328,7 +328,6 @@ static void takepreview(void);
 static void previewtag(const Arg *arg);
 static void sigchld(int unused);
 static void spawn(const Arg *arg);
-static void switchtag(void);
 static Monitor *systraytomon(Monitor *m);
 static void tabmode(const Arg *arg);
 static void tag(const Arg *arg);
@@ -2175,7 +2174,6 @@ monocle(Monitor *m)
 }
 
 void motionnotify(XEvent *e) {
-  unsigned int i, x;
   static Monitor *mon = NULL;
   Monitor *m;
   XMotionEvent *ev = &e->xmotion;
