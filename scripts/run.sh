@@ -22,4 +22,4 @@ clipit &
 #eww open eww &
 
 ~/.config/ddwm/scripts/bar.sh &
-while type dwm >/dev/null; do dwm && continue || break; done
+while type ddwm >/dev/null; do ddwm && continue || break; done
