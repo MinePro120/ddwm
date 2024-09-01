@@ -37,7 +37,7 @@ static const int new_window_attach_on_end = 1;  /* 1 means the new window will a
 #define ICONSIZE 24   /* icon size */
 #define ICONSPACING 8 /* space between icon and title */
 
-static const char *fonts[]          = {"Noto Sans:style:medium:size=10", "SauceCodePro Nerd Font Mono:style:medium:size=18"};
+static const char *fonts[]          = {"Noto Sans:style:medium:size=10", "SauceCodePro NFM:style:medium:size=18"};
 
 // theme
 #include "themes/nord.h"
@@ -66,7 +66,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static char *tags[] = {"", "", "", "", "", "", "", ""};
+static char *tags[] = {"", "", "", "", "", "", "", ""};
 
 static const char* eww[] = { "eww", "open", "eww", NULL };
 
@@ -81,7 +81,7 @@ static const int tagschemes[] = {
 };
 
 static const unsigned int ulinepad      = 5; /* horizontal padding between the underline and tag */
-static const unsigned int ulinestroke   = 2; /* thickness / height of the underline */
+static const unsigned int ulinestroke   = 3; /* thickness / height of the underline */
 static const unsigned int ulinevoffset  = 0; /* how far above the bottom of the bar the line should appear */
 static const int ulineall               = 0; /* 1 to show underline on all tags, 0 for just the active ones */
 
